@@ -1,0 +1,41 @@
+[elx@localhost planets]$ git remote add origin git@github.com:elisasanzani/planets.git
+[elx@localhost planets]$ git remote -v
+origin	git@github.com:elisasanzani/planets.git (fetch)
+origin	git@github.com:elisasanzani/planets.git (push)
+[elx@localhost planets]$ ls -al ~/.ssh
+totale 8
+drwx------. 1 elx elx   52 23 mar 15.13 .
+drwx------. 1 elx elx 1018 29 mar 15.56 ..
+-rw-------. 1 elx elx 2937 23 mar 15.13 known_hosts
+-rw-------. 1 elx elx 2355 23 mar 15.13 known_hosts.old
+[elx@localhost planets]$ ssh-keygen -t ed25519 -C "esanzani@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/home/elx/.ssh/id_ed25519):    
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/elx/.ssh/id_ed25519
+Your public key has been saved in /home/elx/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:lRbxNT7mYptNAEZVY2pSuZwk5XemVAmpkKymUMcUT2s esanzani@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|      ooooB+++O o|
+|     . oo=oBo* = |
+|    . . .E*+Bo* o|
+|   .   o.o ++* = |
+|    . o S   o +  |
+|     .     . *   |
+|            o .  |
+|                 |
+|                 |
++----[SHA256]-----+
+[elx@localhost planets]$ ls -al ~/.ssh
+totale 16
+drwx------. 1 elx elx  100 29 mar 16.16 .
+drwx------. 1 elx elx 1018 29 mar 15.56 ..
+-rw-------. 1 elx elx  464 29 mar 16.16 id_ed25519
+-rw-r--r--. 1 elx elx  100 29 mar 16.16 id_ed25519.pub
+-rw-------. 1 elx elx 2937 23 mar 15.13 known_hosts
+-rw-------. 1 elx elx 2355 23 mar 15.13 known_hosts.old
+[elx@localhost planets]$ 
+

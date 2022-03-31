@@ -1,0 +1,5 @@
+indico 
+https://indico.cern.ch/event/1112526/timetable/
+
+softw carpent
+https://software-carpentry.org/lessons/index.html
